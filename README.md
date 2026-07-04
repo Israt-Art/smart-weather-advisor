@@ -37,3 +37,28 @@ comparison and final web app deployment.
 ---
 
 ## 📁 Project Structure
+
+
+smart-weather-advisor/
+│
+├── 📁 ml_notebook/
+│   ├── Ai_Weather.ipynb              # Main Colab notebook
+│   ├── DailyDelhiClimateTest.csv     # Original dataset
+│   └── DailyDelhiClimate_Cleaned.csv # Cleaned dataset
+│
+├── 📁 models/
+│   ├── model_raw.pkl                 # ✅ Final deployed model
+│   ├── scaler_raw.pkl                # ✅ Final scaler
+│   ├── model.pkl                     # Experiment 1
+│   ├── model_new.pkl                 # Experiment 2
+│   ├── model_best.pkl                # Experiment 3
+│   ├── model_final.pkl               # Experiment 4
+│   ├── scaler.pkl                    # Scaler v1
+│   ├── scaler_new.pkl                # Scaler v2
+│   └── scaler_final.pkl              # Scaler v3
+│
+└── 📁 web_app/
+├── app.py                        # Main Streamlit app
+├── requirements.txt              # Dependencies
+├── model_raw.pkl                 # Model for deployment
+└── scaler_raw.pkl                # Scaler for deployment
