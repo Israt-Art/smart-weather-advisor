@@ -39,6 +39,7 @@ comparison and final web app deployment.
 ## 📁 Project Structure
 
 
+```
 smart-weather-advisor/
 │
 ├── 📁 ml_notebook/                       ← Colab notebook & data
@@ -62,3 +63,4 @@ smart-weather-advisor/
     ├── model_raw.pkl                     ← ✅ Model used by app
     ├── requirements.txt                  ← Python dependencies
     └── scaler_raw.pkl                    ← ✅ Scaler used by app
+```
