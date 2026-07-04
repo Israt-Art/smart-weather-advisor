@@ -41,24 +41,24 @@ comparison and final web app deployment.
 
 smart-weather-advisor/
 │
-├── 📁 ml_notebook/
-│   ├── Ai_Weather.ipynb              # Main Colab notebook
-│   ├── DailyDelhiClimateTest.csv     # Original dataset
-│   └── DailyDelhiClimate_Cleaned.csv # Cleaned dataset
+├── 📁 ml_notebook/                       ← Colab notebook & data
+│   ├── Ai_Weather.ipynb                  ← Main notebook (80 cells)
+│   ├── DailyDelhiClimateTest.csv         ← Original raw dataset
+│   └── DailyDelhiClimate_Cleaned.csv     ← Cleaned & labeled dataset
 │
-├── 📁 models/
-│   ├── model_raw.pkl                 # ✅ Final deployed model
-│   ├── scaler_raw.pkl                # ✅ Final scaler
-│   ├── model.pkl                     # Experiment 1
-│   ├── model_new.pkl                 # Experiment 2
-│   ├── model_best.pkl                # Experiment 3
-│   ├── model_final.pkl               # Experiment 4
-│   ├── scaler.pkl                    # Scaler v1
-│   ├── scaler_new.pkl                # Scaler v2
-│   └── scaler_final.pkl              # Scaler v3
+├── 📁 models/                            ← All saved ML models
+│   ├── model.pkl                         ← Experiment 1 (Naive Bayes)
+│   ├── model_best.pkl                    ← Experiment 2 (Decision Tree)
+│   ├── model_final.pkl                   ← Experiment 3 (with meantemp)
+│   ├── model_new.pkl                     ← Experiment 4 (balanced NB)
+│   ├── model_raw.pkl                     ← ✅ Final deployed model
+│   ├── scaler.pkl                        ← Scaler v1
+│   ├── scaler_final.pkl                  ← Scaler v2
+│   ├── scaler_new.pkl                    ← Scaler v3
+│   └── scaler_raw.pkl                    ← ✅ Final deployed scaler
 │
-└── 📁 web_app/
-├── app.py                        # Main Streamlit app
-├── requirements.txt              # Dependencies
-├── model_raw.pkl                 # Model for deployment
-└── scaler_raw.pkl                # Scaler for deployment
+└── 📁 web_app/                           ← Streamlit web application
+    ├── app.py                            ← Main app code
+    ├── model_raw.pkl                     ← ✅ Model used by app
+    ├── requirements.txt                  ← Python dependencies
+    └── scaler_raw.pkl                    ← ✅ Scaler used by app
