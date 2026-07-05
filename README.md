@@ -64,3 +64,75 @@ smart-weather-advisor/
     ├── requirements.txt                  ← Python dependencies
     └── scaler_raw.pkl                    ← ✅ Scaler used by app
 ```
+
+
+---
+
+## 🤖 Models Trained & Compared
+
+| Model | Train Acc | Val Acc | Test Acc | F1 Score | Overfit |
+|---|---|---|---|---|---|
+| Decision Tree | 100% | 64.71% | 88.89% 🏆 | 88.30% | ⚠️ Yes |
+| Random Forest | 100% | 64.71% | 83.33% | 78.75% | ⚠️ Yes |
+| Naive Bayes | 79.75% | 76.47% | 77.78% | 79.75% | ✅ No |
+| KNN | 83.54% | 64.71% | 72.22% | 67.41% | ⚠️ Yes |
+| SVM | 63.29% | 47.06% | 50.00% | 33.33% | ⚠️ Yes |
+
+**Deployed Model:** Decision Tree Classifier (88.89% Test Accuracy)
+
+---
+
+## 📊 Dataset Information
+
+- **Source:** Kaggle — Daily Delhi Climate Dataset
+- **Size:** 114 rows × 5 columns
+- **Features:** date, meantemp, humidity, wind_speed, meanpressure
+- **Target:** temp_label (Cold / Mild / Hot)
+- **Date Range:** January 2017 — April 2017
+
+**Temperature Categories:**
+- 🔵 Cold → below 15°C (13 samples — 11.4%)
+- 🟡 Mild → 15°C to 25°C (67 samples — 58.8%)
+- 🔴 Hot → above 25°C (34 samples — 29.8%)
+
+---
+
+## 🔧 Complete Project Pipeline
+
+| Step | Task | Status |
+|---|---|---|
+| 1 | Data Collection (Kaggle) | ✅ Done |
+| 2 | Data Preprocessing & Cleaning | ✅ Done |
+| 3 | Annotation (Season & Temp Labels) | ✅ Done |
+| 4 | Model Selection (5 classifiers) | ✅ Done |
+| 5 | Model Training (70/15/15 split) | ✅ Done |
+| 6 | Performance Evaluation | ✅ Done |
+| 7 | Performance Comparison | ✅ Done |
+| 8 | Visualization (Matplotlib & Seaborn) | ✅ Done |
+| 9 | Model Deployment (Streamlit) | ✅ Done |
+
+---
+
+## 🚀 How to Run Locally
+
+**Step 1 — Clone the repository:**
+```bash
+git clone https://github.com/Israt-Art/smart-weather-advisor.git
+```
+
+**Step 2 — Go to web_app folder:**
+```bash
+cd smart-weather-advisor/web_app
+```
+
+**Step 3 — Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4 — Run the app:**
+```bash
+streamlit run app.py
+```
+
+**Step 5 — Open browser:**
