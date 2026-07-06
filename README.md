@@ -258,4 +258,4 @@ streamlit run app.py
 streamlit run app.py
 ```
 
-**Step 5 — Open browser:**
+
