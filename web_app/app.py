@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pickle
 import numpy as np
@@ -15,9 +16,13 @@ st.set_page_config(
 # ─── Load Model & Scaler ───────────────────────
 @st.cache_resource
 def load_model():
-    with open('model_raw.pkl', 'rb') as f:
+    base_path = os.path.dirname(__file__)
+    model_path = os.path.join(base_path, 'model_raw.pkl')
+    scaler_path = os.path.join(base_path, 'scaler_raw.pkl')
+    
+    with open(model_path, 'rb') as f:
         model = pickle.load(f)
-    with open('scaler_raw.pkl', 'rb') as f:
+    with open(scaler_path, 'rb') as f:
         scaler = pickle.load(f)
     return model, scaler
 
