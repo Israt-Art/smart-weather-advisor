@@ -216,8 +216,8 @@ streamlit run app.py
 
 | Member | Role |
 |---|---|
-| Member 1 (Your Name) | Data Collection & Preprocessing |
-| Member 2 (Groupmate Name) | Model Training, Evaluation & Deployment |
+| Member 1 (Israt) | Data Collection & Preprocessing |
+| Member 2 (Tasfa) | Model Training, Evaluation & Deployment |
 
 ---
 
@@ -226,7 +226,7 @@ streamlit run app.py
 - **Course:** Artificial Intelligence
 - **Project:** Weather Classification & Smart Advisory System
 - **Dataset:** Daily Delhi Climate (Kaggle)
-- **Institution:** Your University Name
+- **Institution:** United International University
 - **Submitted:** June 2026
 
 ---
