@@ -134,6 +134,12 @@ pip install -r requirements.txt
 
 ---
 
+```bash
+streamlit run app.py
+```
+
+**Step 5 — Open browser:**
+
 ## 🔐 Login Credentials
 
 | Role | Username | Password | Access |
