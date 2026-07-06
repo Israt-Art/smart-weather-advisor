@@ -131,6 +131,123 @@ pip install -r requirements.txt
 ```
 
 **Step 4 — Run the app:**
+
+---
+
+## 🔐 Login Credentials
+
+| Role | Username | Password | Access |
+|---|---|---|---|
+| 👑 Admin | admin | weather123 | Full access (5 pages) |
+| 👤 User | user | delhi123 | Limited access (3 pages) |
+
+---
+
+## 📱 App Pages
+
+| Page | Admin | User |
+|---|---|---|
+| 🏠 Home & Predict | ✅ | ✅ |
+| 📊 Data Visualization | ✅ | ✅ |
+| 🔬 Model Details | ✅ | ❌ |
+| 👥 User Management | ✅ | ❌ |
+| ℹ️ About | ✅ | ✅ |
+
+---
+
+## 📊 Preprocessing Steps
+
+1. ✅ Loaded & explored raw dataset
+2. ✅ Checked missing values → None found
+3. ✅ Checked duplicates → None found
+4. ✅ Fixed outlier in meanpressure (59.0 → 1012.74)
+5. ✅ Parsed date → extracted month & day
+6. ✅ Created season labels (Winter/Spring/Summer/Autumn)
+7. ✅ Created temperature labels (Cold/Mild/Hot)
+8. ✅ Normalized features using MinMaxScaler
+
+---
+
+## 📈 Visualizations Included
+
+| # | Chart | Type | Library |
+|---|---|---|---|
+| 1 | Temperature Over Time | Line Chart | Matplotlib |
+| 2 | Season Distribution | Bar Chart | Matplotlib |
+| 3 | Temperature Category | Pie Chart | Matplotlib |
+| 4 | Feature Correlation | Heatmap | Seaborn |
+| 5 | Model Accuracy Comparison | Bar Chart | Matplotlib |
+| 6 | Confusion Matrix (Best Model) | Heatmap | Seaborn |
+| 7 | Train vs Val vs Test | Grouped Bar | Matplotlib |
+| 8 | Confusion Matrix (All Models) | Heatmap Grid | Seaborn |
+| 9 | Test Accuracy Comparison | Bar Chart | Matplotlib |
+| 10 | All 4 Metrics Comparison | Grouped Bar | Matplotlib |
+| 11 | F1 Score Comparison | Bar Chart | Matplotlib |
+| 12 | Complete Performance Heatmap | Heatmap | Seaborn |
+| 13 | Model Comparison | Radar Chart | Matplotlib |
+| 14 | Performance Trend | Line Chart | Matplotlib |
+
+**Total: 14 Visualizations**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python 3.14 | Programming language |
+| Pandas & NumPy | Data manipulation |
+| Scikit-learn | ML models |
+| Matplotlib & Seaborn | Visualizations |
+| Streamlit | Web framework |
+| Google Colab | Model training |
+| Pickle | Model saving |
+| GitHub | Version control |
+
+---
+
+## 👥 Team Members
+
+| Member | Role |
+|---|---|
+| Member 1 (Your Name) | Data Collection & Preprocessing |
+| Member 2 (Groupmate Name) | Model Training, Evaluation & Deployment |
+
+---
+
+## 📅 Course Information
+
+- **Course:** Artificial Intelligence
+- **Project:** Weather Classification & Smart Advisory System
+- **Dataset:** Daily Delhi Climate (Kaggle)
+- **Institution:** Your University Name
+- **Submitted:** June 2026
+
+---
+
+## 🔗 Links
+
+- 📓 **Colab Notebook:** [View Notebook](https://github.com/Israt-Art/smart-weather-advisor/blob/main/ml_notebook/Ai_Weather.ipynb)
+- 📊 **Dataset:** [Kaggle - Daily Delhi Climate](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data)
+- 🌐 **Live App:** Coming soon on Streamlit Cloud
+
+---
+
+## ⚠️ Key Findings
+
+- Decision Tree has highest test accuracy (88.89%) but overfits
+- Naive Bayes is most balanced — no overfitting (recommended)
+- SVM completely failed on this small 114 sample dataset
+- Cold class has low prediction due to class imbalance (only 13 samples)
+- Dataset is too small — more data would improve all models
+
+---
+
+⭐ If you found this project helpful, please give it a star!
+
+---
+
+*Built with ❤️ using Python & Streamlit*
 ```bash
 streamlit run app.py
 ```
