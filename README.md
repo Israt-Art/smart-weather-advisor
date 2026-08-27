@@ -38,32 +38,48 @@ comparison and final web app deployment.
 
 ## 📁 Project Structure
 
-
-```
 smart-weather-advisor/
 │
-├── 📁 ml_notebook/                       ← Colab notebook & data
-│   ├── Ai_Weather.ipynb                  ← Main notebook (80 cells)
-│   ├── DailyDelhiClimateTest.csv         ← Original raw dataset
-│   └── DailyDelhiClimate_Cleaned.csv     ← Cleaned & labeled dataset
+├── 📁 ml_notebook/ ← Colab notebook & data
+│ ├── Ai_Weather.ipynb ← Main notebook (80 cells)
+│ ├── DailyDelhiClimateTest.csv ← Original raw dataset
+│ └── DailyDelhiClimate_Cleaned.csv ← Cleaned & labeled dataset
 │
-├── 📁 models/                            ← All saved ML models
-│   ├── model.pkl                         ← Experiment 1 (Naive Bayes)
-│   ├── model_best.pkl                    ← Experiment 2 (Decision Tree)
-│   ├── model_final.pkl                   ← Experiment 3 (with meantemp)
-│   ├── model_new.pkl                     ← Experiment 4 (balanced NB)
-│   ├── model_raw.pkl                     ← ✅ Final deployed model
-│   ├── scaler.pkl                        ← Scaler v1
-│   ├── scaler_final.pkl                  ← Scaler v2
-│   ├── scaler_new.pkl                    ← Scaler v3
-│   └── scaler_raw.pkl                    ← ✅ Final deployed scaler
+├── 📁 models/ ← All saved ML models
+│ ├── model.pkl ← Experiment 1 (Naive Bayes)
+│ ├── model_best.pkl ← Experiment 2 (Decision Tree)
+│ ├── model_final.pkl ← Experiment 3 (with meantemp)
+│ ├── model_new.pkl ← Experiment 4 (balanced NB)
+│ ├── model_raw.pkl ← ✅ Final deployed model
+│ ├── scaler.pkl ← Scaler v1
+│ ├── scaler_final.pkl ← Scaler v2
+│ ├── scaler_new.pkl ← Scaler v3
+│ └── scaler_raw.pkl ← ✅ Final deployed scaler
 │
-└── 📁 web_app/                           ← Streamlit web application
-    ├── app.py                            ← Main app code
-    ├── model_raw.pkl                     ← ✅ Model used by app
-    ├── requirements.txt                  ← Python dependencies
-    └── scaler_raw.pkl                    ← ✅ Scaler used by app
-```
+├── 📁 screenshots admin/ ← Admin view screenshots
+│ ├── login_admin.png
+│ ├── prediction_cold.png
+│ ├── prediction_hot.png
+│ ├── prediction_mild.png
+│ ├── model_details_top.png
+│ ├── model_details_bottom.png
+│ ├── user_management.png
+│ ├── visualization_top.png
+│ ├── visualization_bottom.png
+│ └── about.png
+│
+├── 📁 screenshots user/ ← User view screenshots
+│ ├── login_user.png
+│ ├── home_user.png
+│ ├── visualization_user_top.png
+│ ├── visualization_user_bottom.png
+│ └── about_user.png
+│
+└── 📁 web_app/ ← Streamlit web application
+├── app.py ← Main app code
+├── model_raw.pkl ← ✅ Model used by app
+├── requirements.txt ← Python dependencies
+└── scaler_raw.pkl ← ✅ Scaler used by app
 
 
 ---
@@ -131,14 +147,16 @@ pip install -r requirements.txt
 ```
 
 **Step 4 — Run the app:**
-
----
-
 ```bash
 streamlit run app.py
 ```
 
 **Step 5 — Open browser:**
+
+http://localhost:8501
+
+
+---
 
 ## 🔐 Login Credentials
 
@@ -158,6 +176,87 @@ streamlit run app.py
 | 🔬 Model Details | ✅ | ❌ |
 | 👥 User Management | ✅ | ❌ |
 | ℹ️ About | ✅ | ✅ |
+
+---
+
+## 📸 App Screenshots
+
+### 👑 Admin View
+
+#### 🔐 Login Page (Admin)
+![Login Admin](<screenshots admin/login_admin.png>)
+
+---
+
+#### 🔴 Prediction — Hot Weather
+![Prediction Hot](<screenshots admin/prediction_hot.png>)
+
+---
+
+#### 🟡 Prediction — Mild Weather
+![Prediction Mild](<screenshots admin/prediction_mild.png>)
+
+---
+
+#### 🔵 Prediction — Cold Weather
+![Prediction Cold](<screenshots admin/prediction_cold.png>)
+
+---
+
+#### 📊 Data Visualization (Top)
+![Visualization Top](<screenshots admin/visualization_top.png>)
+
+---
+
+#### 📊 Data Visualization (Bottom)
+![Visualization Bottom](<screenshots admin/visualization_bottom.png>)
+
+---
+
+#### 🔬 Model Details — Top (Admin Only)
+![Model Details Top](<screenshots admin/model_details_top.png>)
+
+---
+
+#### 🔬 Model Details — Bottom (Admin Only)
+![Model Details Bottom](<screenshots admin/model_details_bottom.png>)
+
+---
+
+#### 👥 User Management (Admin Only)
+![User Management](<screenshots admin/user_management.png>)
+
+---
+
+#### ℹ️ About Page (Admin)
+![About Admin](<screenshots admin/about.png>)
+
+---
+
+### 👤 User View
+
+#### 🔐 Login Page (User)
+![Login User](<screenshots user/login_user.png>)
+
+---
+
+#### 🏠 Home & Predict Page (User)
+![Home User](<screenshots user/home_user.png>)
+
+---
+
+#### 📊 Data Visualization Top (User)
+![Visualization User Top](<screenshots user/visualization_user_top.png>)
+
+---
+
+#### 📊 Data Visualization Bottom (User)
+![Visualization User Bottom](<screenshots user/visualization_user_bottom.png>)
+
+---
+
+#### ℹ️ About Page (User)
+![About User](<screenshots user/about_user.png>)
 
 ---
 
@@ -235,7 +334,7 @@ streamlit run app.py
 
 - 📓 **Colab Notebook:** [View Notebook](https://github.com/Israt-Art/smart-weather-advisor/blob/main/ml_notebook/Ai_Weather.ipynb)
 - 📊 **Dataset:** [Kaggle - Daily Delhi Climate](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data)
-- 🌐 **Live App:** Coming soon on Streamlit Cloud
+- 🌐 **Live App:** [delhi-climate-advisor.streamlit.app](https://delhi-climate-advisor.streamlit.app)
 
 ---
 
@@ -254,8 +353,3 @@ streamlit run app.py
 ---
 
 *Built with ❤️ using Python & Streamlit*
-```bash
-streamlit run app.py
-```
-
-
