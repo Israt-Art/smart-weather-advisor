@@ -162,6 +162,9 @@ http://localhost:8501
 
 ---
 
+
+---
+
 ## 🔐 Login Credentials
 
 | Role | Username | Password | Access |
@@ -351,6 +354,12 @@ http://localhost:8501
 - Dataset is too small — more data would improve all models
 
 ---
+
+⭐ If you found this project helpful, please give it a star!
+
+---
+
+*Built with ❤️ using Python & Streamlit*
 
 ⭐ If you found this project helpful, please give it a star!
 
