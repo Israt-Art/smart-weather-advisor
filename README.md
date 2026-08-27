@@ -167,6 +167,9 @@ http://localhost:8501
 
 
 
+
+---
+
 ## 🔐 Login Credentials
 
 | Role | Username | Password | Access |
@@ -294,4 +297,71 @@ http://localhost:8501
 | 6 | Confusion Matrix (Best Model) | Heatmap | Seaborn |
 | 7 | Train vs Val vs Test | Grouped Bar | Matplotlib |
 | 8 | Confusion Matrix (All Models) | Heatmap Grid | Seaborn |
-| 9
+| 9 | Test Accuracy Comparison | Bar Chart | Matplotlib |
+| 10 | All 4 Metrics Comparison | Grouped Bar | Matplotlib |
+| 11 | F1 Score Comparison | Bar Chart | Matplotlib |
+| 12 | Complete Performance Heatmap | Heatmap | Seaborn |
+| 13 | Model Comparison | Radar Chart | Matplotlib |
+| 14 | Performance Trend | Line Chart | Matplotlib |
+
+**Total: 14 Visualizations**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python 3.14 | Programming language |
+| Pandas & NumPy | Data manipulation |
+| Scikit-learn | ML models |
+| Matplotlib & Seaborn | Visualizations |
+| Streamlit | Web framework |
+| Google Colab | Model training |
+| Pickle | Model saving |
+| GitHub | Version control |
+
+---
+
+## 👥 Team Members
+
+| Member | Role |
+|---|---|
+| Member 1 (Israt) | Data Collection & Preprocessing |
+| Member 2 (Tasfa) | Model Training, Evaluation & Deployment |
+
+---
+
+## 📅 Course Information
+
+- **Course:** Artificial Intelligence
+- **Project:** Weather Classification & Smart Advisory System
+- **Dataset:** Daily Delhi Climate (Kaggle)
+- **Institution:** United International University
+- **Submitted:** June 2026
+
+---
+
+## 🔗 Links
+
+- 📓 **Colab Notebook:** [View Notebook](https://github.com/Israt-Art/smart-weather-advisor/blob/main/ml_notebook/Ai_Weather.ipynb)
+- 📊 **Dataset:** [Kaggle - Daily Delhi Climate](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data)
+- 🌐 **Live App:** [delhi-climate-advisor.streamlit.app](https://delhi-climate-advisor.streamlit.app)
+
+---
+
+## ⚠️ Key Findings
+
+- Decision Tree has highest test accuracy (88.89%) but overfits
+- Naive Bayes is most balanced — no overfitting (recommended)
+- SVM completely failed on this small 114 sample dataset
+- Cold class has low prediction due to class imbalance (only 13 samples)
+- Dataset is too small — more data would improve all models
+
+---
+
+⭐ If you found this project helpful, please give it a star!
+
+---
+
+*Built with ❤️ using Python & Streamlit*
