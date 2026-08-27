@@ -165,6 +165,8 @@ http://localhost:8501
 
 ---
 
+
+
 ## 🔐 Login Credentials
 
 | Role | Username | Password | Access |
@@ -191,79 +193,79 @@ http://localhost:8501
 ### 👑 Admin View
 
 #### 🔐 Login Page (Admin)
-![Login Admin](<screenshots admin/login_admin.png>)
+![Login Admin](<screenshots admin/login_admin.png.png>)
 
 ---
 
 #### 🔴 Prediction — Hot Weather
-![Prediction Hot](<screenshots admin/prediction_hot.png>)
+![Prediction Hot](<screenshots admin/prediction_hot.png.png>)
 
 ---
 
 #### 🟡 Prediction — Mild Weather
-![Prediction Mild](<screenshots admin/prediction_mild.png>)
+![Prediction Mild](<screenshots admin/prediction_mild.png.png>)
 
 ---
 
 #### 🔵 Prediction — Cold Weather
-![Prediction Cold](<screenshots admin/prediction_cold.png>)
+![Prediction Cold](<screenshots admin/prediction_cold.png.png>)
 
 ---
 
 #### 📊 Data Visualization (Top)
-![Visualization Top](<screenshots admin/visualization_top.png>)
+![Visualization Top](<screenshots admin/visualization_top.png.png>)
 
 ---
 
 #### 📊 Data Visualization (Bottom)
-![Visualization Bottom](<screenshots admin/visualization_bottom.png>)
+![Visualization Bottom](<screenshots admin/visualization_bottom.png.png>)
 
 ---
 
 #### 🔬 Model Details — Top (Admin Only)
-![Model Details Top](<screenshots admin/model_details_top.png>)
+![Model Details Top](<screenshots admin/model_details_top.png.png>)
 
 ---
 
 #### 🔬 Model Details — Bottom (Admin Only)
-![Model Details Bottom](<screenshots admin/model_details_bottom.png>)
+![Model Details Bottom](<screenshots admin/model_details_bottom.png.png>)
 
 ---
 
 #### 👥 User Management (Admin Only)
-![User Management](<screenshots admin/user_management.png>)
+![User Management](<screenshots admin/user_management.png.png>)
 
 ---
 
 #### ℹ️ About Page (Admin)
-![About Admin](<screenshots admin/about.png>)
+![About Admin](<screenshots admin/about.png.png>)
 
 ---
 
 ### 👤 User View
 
 #### 🔐 Login Page (User)
-![Login User](<screenshots user/login_user.png>)
+![Login User](<screenshots user/login_user.png.png>)
 
 ---
 
 #### 🏠 Home & Predict Page (User)
-![Home User](<screenshots user/home_user.png>)
+![Home User](<screenshots user/home_user.png.png>)
 
 ---
 
 #### 📊 Data Visualization Top (User)
-![Visualization User Top](<screenshots user/visualization_user_top.png>)
+![Visualization User Top](<screenshots user/visualization_user_top.png.png>)
 
 ---
 
 #### 📊 Data Visualization Bottom (User)
-![Visualization User Bottom](<screenshots user/visualization_user_bottom.png>)
+![Visualization User Bottom](<screenshots user/visualization_user_bottom.png.png>)
 
 ---
 
 #### ℹ️ About Page (User)
-![About User](<screenshots user/about_user.png>)
+![About User](<screenshots user/about_user.png.png>)
 
 ---
 
@@ -292,77 +294,4 @@ http://localhost:8501
 | 6 | Confusion Matrix (Best Model) | Heatmap | Seaborn |
 | 7 | Train vs Val vs Test | Grouped Bar | Matplotlib |
 | 8 | Confusion Matrix (All Models) | Heatmap Grid | Seaborn |
-| 9 | Test Accuracy Comparison | Bar Chart | Matplotlib |
-| 10 | All 4 Metrics Comparison | Grouped Bar | Matplotlib |
-| 11 | F1 Score Comparison | Bar Chart | Matplotlib |
-| 12 | Complete Performance Heatmap | Heatmap | Seaborn |
-| 13 | Model Comparison | Radar Chart | Matplotlib |
-| 14 | Performance Trend | Line Chart | Matplotlib |
-
-**Total: 14 Visualizations**
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| Python 3.14 | Programming language |
-| Pandas & NumPy | Data manipulation |
-| Scikit-learn | ML models |
-| Matplotlib & Seaborn | Visualizations |
-| Streamlit | Web framework |
-| Google Colab | Model training |
-| Pickle | Model saving |
-| GitHub | Version control |
-
----
-
-## 👥 Team Members
-
-| Member | Role |
-|---|---|
-| Member 1 (Israt) | Data Collection & Preprocessing |
-| Member 2 (Tasfa) | Model Training, Evaluation & Deployment |
-
----
-
-## 📅 Course Information
-
-- **Course:** Artificial Intelligence
-- **Project:** Weather Classification & Smart Advisory System
-- **Dataset:** Daily Delhi Climate (Kaggle)
-- **Institution:** United International University
-- **Submitted:** June 2026
-
----
-
-## 🔗 Links
-
-- 📓 **Colab Notebook:** [View Notebook](https://github.com/Israt-Art/smart-weather-advisor/blob/main/ml_notebook/Ai_Weather.ipynb)
-- 📊 **Dataset:** [Kaggle - Daily Delhi Climate](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data)
-- 🌐 **Live App:** [delhi-climate-advisor.streamlit.app](https://delhi-climate-advisor.streamlit.app)
-
----
-
-## ⚠️ Key Findings
-
-- Decision Tree has highest test accuracy (88.89%) but overfits
-- Naive Bayes is most balanced — no overfitting (recommended)
-- SVM completely failed on this small 114 sample dataset
-- Cold class has low prediction due to class imbalance (only 13 samples)
-- Dataset is too small — more data would improve all models
-
----
-
-⭐ If you found this project helpful, please give it a star!
-
----
-
-*Built with ❤️ using Python & Streamlit*
-
-⭐ If you found this project helpful, please give it a star!
-
----
-
-*Built with ❤️ using Python & Streamlit*
+| 9
